@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+  background-color: aqua;
+}
+
+.webcam {
+  display: flex;
+  justify-content: center;
+}
+
+#camera,
+#resultado {
+  width: 350px;
+  height: 300px;
+  border: 1px ridge black;
+  margin: 10px;
+}

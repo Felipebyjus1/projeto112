@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Identificador de Gestos</title>
+  </head>
+  <body>
+    <h1>Identificador de gestos</h1>
+    <h4>este APP identifica os seguintes gestos:| 👍 | ✌️ | 🤙 | 👎 |</h4>
+    <button onclick="TirarFoto()" class="btn btn-success">Tirar foto</button>
+    <div class="webcam">
+      <div id="camera"></div>
+      <div id="resultado"></div>
+    </div>
+    <p class="btn btn-primary">Gesto identificado:<span id="gesto"></span></p>
+    <br>
+    <p class="btn btn-primary">Precisão identificada:<span id="precisão"></span></p>
+
+
+    <script src="main.js"></script>
+  </body>
+</html>
